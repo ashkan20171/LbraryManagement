@@ -21,10 +21,10 @@ l1.grid(row=0, column=0)
 l2 = Label(window, text="نویسنده")
 l2.grid(row=0, column=2)
 
-l3 = Label(window, text="Year")
+l3 = Label(window, text="سال")
 l3.grid(row=1, column=0)
 
-l4 = Label(window, text="ISBN")
+l4 = Label(window, text="سریال")
 l4.grid(row=1, column=2)
 
 # ===================== Entries ========================
@@ -84,7 +84,7 @@ def view_command():
     fill_list(books)
 
 
-b1 = Button(window, text="View All", width=12, command=lambda: view_command())
+b1 = Button(window, text="مشاهده همه", width=12, command=lambda: view_command())
 b1.grid(row=2, column=3)
 
 
@@ -94,7 +94,7 @@ def search_command():
     fill_list(books)
 
 
-b2 = Button(window, text="Search Entry", width=12, command=search_command)
+b2 = Button(window, text="جستجو", width=12, command=search_command)
 b2.grid(row=3, column=3)
 
 
@@ -103,7 +103,7 @@ def add_command():
     view_command()
 
 
-b3 = Button(window, text="Add Entry", width=12, command=lambda: add_command())
+b3 = Button(window, text="افزودن", width=12, command=lambda: add_command())
 b3.grid(row=4, column=3)
 
 
@@ -112,7 +112,7 @@ def update_command():
     view_command()
 
 
-b4 = Button(window, text="Update Selected", width=12, command=update_command)
+b4 = Button(window, text="ویرایش", width=12, command=update_command)
 b4.grid(row=5, column=3)
 
 
@@ -121,10 +121,10 @@ def delete_command():
     view_command()
 
 
-b5 = Button(window, text="Delete Selected", width=12, command=delete_command)
+b5 = Button(window, text="حذف", width=12, command=delete_command)
 b5.grid(row=6, column=3)
 
-b6 = Button(window, text="Close", width=12, command=window.destroy)
+b6 = Button(window, text="خروج", width=12, command=window.destroy)
 b6.grid(row=7, column=3)
 
 view_command()
